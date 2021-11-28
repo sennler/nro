@@ -1,0 +1,97 @@
+.nr P 1 1
+.nr L 1 1
+.nr N 1 1
+.nr S 1 1
+.nr C 1 1
+.de pg
+.pl 70
+.in 4
+.rm 76
+.m1 3
+.m2 4
+.m3 4
+.m4 3
+.ne 2
+.en
+.de ct
+.bp 
+.ce
+.bo 1
+$0
+.sp 2
+.br
+.en
+.de se
+.sp 2
+.bo 1
+$0
+.sp 1
+.br
+.en
+.de cs
+.sp 2
+.ce
+.bo 1
+$0
+.sp 1
+.br
+.en
+.de ns
+.sp 2
+.bo 1
+@nS $0
+.sp 1
+.br
+.nr S +1
+.en
+.de nc
+.sp 2
+.ce 1
+.bo 1
+@nC $0
+.sp 1
+.br
+.nr C +1
+.en
+.de np
+.sp 1
+.br
+.bo 1
+@nP
+.nr P +1
+.en
+.de rp
+.rn P 1 1
+.en
+.de ip
+.sp 1
+.br
+.ti +4
+.en
+.de up
+.sp 1
+.br
+.en
+.de nl
+.sp 1
+.br
+.in +2
+@nL.
+$0
+.br
+.in -2
+.nr L +1
+.en
+.de rl
+.nr L 1 1
+.en
+.de pn
+.sp 1
+.br
+.ti -2
+@nN
+.nr N +1
+.en
+.de rn
+.nr N 1 1
+.en
