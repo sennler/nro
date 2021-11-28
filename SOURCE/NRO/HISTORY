@@ -1,0 +1,54 @@
+add: "letters=" pragma to allow letters to be fonted with .bo and .ul
+add: tabstops, commands .ts & .tb
+add: searching '-m' files in the same directory where NRO resides secondly
+fix: ".ct" now detects a line break
+add: '.ct' concatination
+chg: let the put() and putlin() functions automatically add the '\n'
+chg: currently the output buffer contains nearly that characters that are
+	later dumped to the output stream, e.g. if bold face is active each
+	character ? is represented by three characters:
+		?\b?
+	The altered way to store that information is to have a structure of
+	currently used character shape. There all information, like bold face,
+	underlining, overstriking etc., is stored and can be changed easily
+	depending on the context, e.g. header/footer/normal text, and by the
+	text reading functions and the text interpreting functions.
+add: ZZ command to allow pragma definitions for NRO; currently it is ignored
+chg: the word delimiters (spaces :) are added immediately before a new word
+	is appended to the buffer. That easies the algorithm.
+chg: remove co.outwds; the number of holes are counted within spread() itself
+chg: co.outp: from index into co.outbuf into pointer; reduces size
+bugfix: Justify (spread()) lines. An "end of sentence" has two spaces but
+	they are counted only once. That causes that spread() ignores word
+	delims left of such "end of sentence".
+	That results in a more "balanced" fillment, in my mind.
+bugfix: If a line is MAXLINE - 1, the output buffer overflows without
+	notice in putwrd(), then brk()
+chg: Help screen if no input file was processed
+chg: made several changes to the code to make it smaller and/or quicker
+chg: getwrd(): determining if this is the end of a sentence:
+	any word with the last character one of: '!', '?', or '.'.
+	The former rule that '.' must be either followed by '\n' or it
+	must not be a word with a capital letter seems a bit weak to me
+	to make much difference to the general rule. I ran several nro files
+	through that code and found only a few changes anyway.
+fix: combined bold face & underline without the '-b' option
+add: prnchar(): to reduce the number of programmed loops with prchar()
+chg: strip '\r' chars while reading input file; reduces checks within program
+fix: Make getmacname() to work with any MNAMELENGTH
+fix: major bug in ngetc() where (char) was not promoted to (int)
+chg: deleted the limit of the length of a macro definition
+chg: command type detection turned into table matching
+bugfix: handle macro names longer than 10 characters
+chg: Error(): printf()-compliant
+chg: storage of macro definition
+bugfix: macro table may overflow, fixed by replacing code completely
+add: Error(): centralized error-printing & terminating function
+chg: removed min() & max(), Micro-C already defines them
+add: underline & bold face can be mixed
+bugfix: bold()/underl(): the temp buf overflows,if last char is to be expanded
+add: '.cb' continuous bold face
+add: '..' comment command
+bugfix: main(): setbuf() does not effect pout because Micro-C is not ANSI compliant
+
+Initial revision

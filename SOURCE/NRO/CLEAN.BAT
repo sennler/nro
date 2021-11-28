@@ -1,0 +1,12 @@
+@echo off
+del cmds.inc
+del defcs.inc
+del getcs.inc
+del putcs.inc
+del interpre.com
+del mkcmds.com
+del mkcsinc.com
+del nro.com
+del 1tonro.com
+del nro.man
+del nro.txt

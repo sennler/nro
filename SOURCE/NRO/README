@@ -1,0 +1,30 @@
+This is a revised version of NRO distributed by Dave Dunfield within
+the examples of his Micro-C compiler. I left in all the references to
+the original athors.
+
+All modifications made by me (Steffen.Kaiser@FH-Rhein-Sieg.DE [ska]) mostly
+leave the NRO function as it does without the modifications. There were
+made some bugfixes, increasing speed, decreasing size, using the memory
+more effecient, make NRO 8bit clean,& add some new functionality.
+
+I include a little work "interprete" that will interprete the control
+characters: '\b',& '\r', thus it will transform the output of NRO into
+a plain text file.
+
+The other on "1tonro" converts some additional NROFF functionality used by
+other NROFF-clones I sued in the past (the ones accepting ".1" as extension)
+to NRO compatible source code. Well, it needs this version of NRO :-)
+
+To compile all the stuff just run "compile.bat". Creates the *.MAN and *.TXT
+files, too.
+To clean up just run "clean.bat".
+
+It will not be able anymore to split the file into smaller parts.
+
+The target compiler is Micro-C v3.14. If you still have version 3.13, you
+need to download a newer one, because there is a bug in the library of
+v3.13, which will make this version of NRO unable to run.
+
+If you want to ask, why the hell I'm using or even looking at such a program,
+where cool browsers and powerful text processors are available, well, I don't
+know for sure. All I know is that I'm using it.

@@ -1,0 +1,28 @@
+set autoindent
+set autotab
+set autowrite
+set nocontrolz
+set digraph
+set equalprg="fmt -t4"
+set noerrorbells
+set exrc
+set noignorecase
+set modelines
+set nomore
+set novice
+set ruler
+set showmatch
+set shiftwidth=4  
+set tabstop=4  
+map #- :q
+abbr! #i #include
+abbr! #d #define
+abbr! #n #ifndef
+abbr! #f #ifdef
+abbr! #e #endif
+abbr! #l #else
+abbr! #m #ifdef _MICROC_
+abbr! #M #ifndef _MICROC_
+abbr! #D #ifndef NDEBUG
+abbr! #N #ifdef NDEBUG
+abbr! #u #undef

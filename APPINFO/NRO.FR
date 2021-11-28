@@ -1,0 +1,6 @@
+Begin3
+Language:    FR, 850
+Title:       nro
+Description: Un processeur de texte similaire  nroff sur UNIX
+Keywords:    nroff, roff, nro, micro-c
+End

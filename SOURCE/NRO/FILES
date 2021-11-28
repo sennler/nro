@@ -1,0 +1,15 @@
+1tonro.c     Convert *.1 -> *.NRO
+an           MAN macros (used if "-man" switch is given to NRO)
+an           MAN macros for FreeDos (used if "-man.fd" switch is given to NRO)
+clean.bat    clean up files created by "compile.bat"
+compile.bat  compile the sources and create the MAN and text pages
+files        this file
+file_id.diz  one line description of this package
+history      change log of NRO
+interpre.c   interpretes control characters and makes plain text files
+mkcmds.c     utility used while compiling NRO
+mkcsinc.c    utility used while compiling NRO
+nro.c        NRO source
+nro.h        NRO header file
+nro.nro      NRO documentation
+readme       readme file

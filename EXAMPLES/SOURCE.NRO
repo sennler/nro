@@ -1,0 +1,163 @@
+.pl 70
+.in 4
+.rm 76
+.m1 3
+.m2 4
+.m3 4
+.m4 3
+.ne 2
+.he "FreeDOS Utilities:"UNIX-like"NRO"
+.fo ""page #""
+.ce
+.bo 1
+NRO - UNIX V7 nroff-style typesetting for FreeDOS
+.sp 2
+.br
+A pertinent question for any serious user of FreeDOS
+who might also have an interest in typesetting
+is:
+does FreeDOS allow for the production of beautiful documents
+with the usual typesetter's toolbox?
+Well, TeX certainly made its way onto MS-DOS
+in the past,
+but I have yet to test emTeX & co.,
+in part because I prefer the simplicity of groff.
+In a broader sense however,
+this is one of series of experiments to test
+and push the limits of FreeDOS
+to see how well it can work as a modern operating system.
+An important part of an operating system today is the
+ability to send professional looking documents in PDF,
+and to a lesser extent, PostScript form.
+This extends naturally to printing said documents as well.
+Does NRO solve this issue for the users of FreeDOS?
+Well, let us delve into the matter.
+.sp 2
+.br
+To start us off is a list of notable limitations to
+NRO that hamper one's ability to produce formatted output
+rivaling that of WordPerfect, WordStar,
+and other well-known MS-DOS word processors.
+.sp 1
+.br
+.bo 1
+Notable Disclaimer:
+NRO does an excellent job of replicating the UNIX V7 roff "nroff",
+which by default does not support many of the more
+"modern" options that GNU's roff "groff" added in order
+to improve the functionality and versatility of the UNIX nroff.
+Additionally,
+if this document nonetheless sounds overly negative,
+it's because the positives of groff are known to all
+who would be interested in using NRO on DOS.
+Heck,
+I wrote this using NRO on FreeDOS,
+and that ain't cause I dislike it.
+.sp 1
+.br
+0.
+Output Formats
+.sp 1
+.br
+.in +2
+This is perhaps the biggest gap in NRO for the typesetting
+inclined.
+One of the joys of using a typesetting software is seeing
+the output beautifully reflected back when printed or ported
+to PDF / PostScript.
+Unfortunately, NRO does not have the ability to natively
+output either PostScript or PDF,
+and it is unlikely that such a feature will be added.
+What to do about that?
+Suffer.
+Printing everything out is another solution,
+though a rather poor one at that.
+Or maybe if I acquire the time, skills, and motivation,
+I might look into how BSD and GNU/Linux accomplished this,
+and implement it myself.
+No promises though, I'm not exactly a DOS guru yet.
+I've only used it for a few months at this point.
+If you read that as me being young, you're right on the money.
+Don't expect anything soon.
+.sp 1
+.br
+.in -2
+1.
+Macros
+.sp 1
+.br
+.in +2
+There aren't any I could find.
+If someone has NRO macros,
+please share them!
+Additional macro functions that would be lovely to have
+include:
+.sp 1
+.br
+.in +2
+* numbered lists and headers
+.br
+* control lines (spacing) andor comment syntax
+.br
+* font sizing 
+.br
+* footnotes
+.sp 1
+.br
+.in -2
+I may get around to implementing mine own at some point,
+though far more likely is that I will only make macros
+using already pre-defined NRO functions.
+This would mean un-numbered lists and headers,
+leading and body paragraphs, a title format, underlined links,
+and not much else.
+.sp 1
+.br
+.in -2
+2.
+Italics (or Emphasis)
+.sp 1
+.br
+.in +2
+Without the ability to use italics in addition to and alongside
+underlining and boldfaced text, NRO remains more limited
+than the other commonly used DOS word processors.
+Again, I might cobble together a way to do this, eventually,
+though I should stress I am not a competent programmer.
+.sp 1
+.br
+.in -2
+3.
+Bold / Underline Exclusivity
+.sp 1
+.br
+.in +2
+Bolding and underlining text are mutually exclusive features.
+This is an unfortunate truth of how NRO works,
+and if I may speculate as to the reason,
+it was likely easier to
+implement this way and not worth the effort for the
+typical use case for groff and nroff:
+writing and rendering manpages.
+On the upside,
+those manaics who feel inclined to use
+bold italicized and underlined text in large fonts
+are currently prevented from abusing that feature as provided
+on other word processing and typesetting software.
+This sort of person is unlikely to be user of groff however,
+making it a moot point.
+Don't worry,
+I used to be one of these people a few years ago.
+I'm not attacking those who do,
+merely criticizing poor taste.
+.sp 4
+.br
+.bo 1
+Closing Remarks:
+See anything incorrect in this document?
+Let me know,
+and I'll fix it as soon as I get time.
+And should this document seem terribly done
+from the view of an experienced *roff user,
+I offer my sincerest apologies.
+I'm still learning it.

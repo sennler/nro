@@ -1,0 +1,140 @@
+
+
+     FreeDOS Utilities:             UNIX-like                             NRO
+
+
+
+
+                NNRROO - UUNNIIXX VV77 nnrrooffff-ssttyyllee ttyyppeesseettttiinngg ffoorr FFrreeeeDDOOSS
+
+
+     A pertinent question for any serious user of FreeDOS who might also have 
+     an  interest in typesetting is: does FreeDOS allow for the production of
+     beautiful documents with the usual  typesetter's  toolbox?    Well,  TeX
+     certainly  made  its way onto MS-DOS in the past, but I have yet to test
+     emTeX & co., in part because I prefer the simplicity of  groff.    In  a
+     broader  sense however, this is one of series of experiments to test and
+     push the limits of FreeDOS to see how well  it  can  work  as  a  modern
+     operating system.  An important part of an operating system today is the 
+     ability  to  send professional looking documents in PDF, and to a lesser
+     extent, PostScript form.    This  extends  naturally  to  printing  said
+     documents as  well.  Does NRO solve this issue for the users of FreeDOS?
+     Well, let us delve into the matter.  
+
+
+     To start us off is a list of notable  limitations  to  NRO  that  hamper
+     one's  ability to produce formatted output rivaling that of WordPerfect,
+     WordStar, and other well-known MS-DOS word processors.  
+
+     NNoottaabbllee DDiissccllaaiimmeerr: NRO does an excellent job of replicating the UNIX V7 
+     roff "nroff", which by  default  does  not  support  many  of  the  more
+     "modern"  options  that GNU's roff "groff" added in order to improve the
+     functionality and versatility of the UNIX nroff.  Additionally, if  this
+     document  nonetheless sounds overly negative, it's because the positives
+     of groff are known to all who would be interested in using NRO  on  DOS.
+     Heck,  I wrote this using NRO on FreeDOS, and that ain't cause I dislike
+     it.  
+
+     0.  Output Formats 
+
+       This is perhaps the biggest gap in NRO for the  typesetting  inclined.
+       One  of  the joys of using a typesetting software is seeing the output
+       beautifully  reflected  back  when  printed  or  ported   to   PDF   /
+       PostScript.   Unfortunately, NRO does not have the ability to natively
+       output either PostScript or PDF,  and  it  is  unlikely  that  such  a
+       feature will be added.    What  to  do  about that?  Suffer.  Printing
+       everything out is another solution, though a rather poor one at  that.
+       Or  maybe  if I acquire the time, skills, and motivation, I might look
+       into how  BSD  and  GNU/Linux  accomplished  this,  and  implement  it
+       myself.  No  promises  though,  I'm  not exactly a DOS guru yet.  I've
+       only used it for a few months at this point.  If you read that  as  me
+       being young, you're right on the money.  Don't expect anything soon.  
+
+     1.  Macros 
+
+       There aren't  any  I  could  find.   If someone has NRO macros, please
+       share them!  Additional macro functions that would be lovely  to  have
+       include: 
+
+         * numbered lists and headers 
+         * control lines (spacing) andor comment syntax 
+         * font sizing  
+         * footnotes 
+
+
+
+
+
+                                      page 1
+
+
+
+
+     FreeDOS Utilities:             UNIX-like                             NRO
+
+
+
+
+       I  may  get  around to implementing mine own at some point, though far
+       more likely is that I will only make macros using already  pre-defined
+       NRO functions.  This would mean un-numbered lists and headers, leading 
+       and  body  paragraphs,  a title format, underlined links, and not much
+       else.  
+
+     2.  Italics (or Emphasis) 
+
+       Without the ability to  use  italics  in  addition  to  and  alongside
+       underlining  and  boldfaced  text,  NRO  remains more limited than the
+       other commonly used DOS  word  processors.    Again,  I  might  cobble
+       together a way to do this, eventually, though I should stress I am not 
+       a competent programmer.  
+
+     3.  Bold / Underline Exclusivity 
+
+       Bolding and underlining text are mutually exclusive features.  This is 
+       an  unfortunate  truth  of how NRO works, and if I may speculate as to
+       the reason, it was likely easier to implement this way and  not  worth
+       the  effort  for the typical use case for groff and nroff: writing and
+       rendering manpages.  On the upside, those manaics who feel inclined to 
+       use bold italicized and underlined text in large fonts  are  currently
+       prevented  from  abusing  that  feature  as  provided  on  other  word
+       processing and typesetting software.  This sort of person is  unlikely
+       to be  user  of groff however, making it a moot point.  Don't worry, I
+       used to be one of these people a few years ago.    I'm  not  attacking
+       those who do, merely criticizing poor taste.  
+
+
+
+
+       CClloossiinngg RReemmaarrkkss:  See  anything  incorrect  in  this document?  Let me
+       know, and I'll fix it as soon as I get time.  And should this document 
+       seem terribly done from the view of an experienced *roff user, I offer 
+       my sincerest apologies.  I'm still learning it.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      page 2
+
+
