@@ -1,0 +1,145 @@
+.so MERP.NRO
+.pg
+.nj
+.he "MERP (1)"NRO Macro Set"NRO v1.2a"
+.fo ""page #""
+.ct "MERP - a simple NRO macro set"
+.ip
+MERP seeks to simplify the process of formatting documents in NRO
+by providing a simple macro set with sensible defaults
+and mnemonic commands.
+By reducing the formatting commands to single lines,
+MERP will hopefully stay out of the way.
+To use the MERP macro set,
+simply put ".so MERP.NRO" at the start of your document.
+The MERP.NRO file must be in the same directory as the your document
+(unfortunately) and do not enclose MERP.NRO in quotations of any kind.
+What's included in MERP?
+We will now go through the entire command set alphabetically
+and explain what each does.
+.br
+.in +4
+.hi 4
+cs
+- centered section,
+boldface,
+and with space above a below to pad it
+(will be referred to as padded for the rest of the document)
+.hi 4
+ct
+- centered title,
+boldface,
+padded,
+and begins a new page
+.hi 4
+hi
+- hanging indent for paragraphs,
+"n" spaces leftmost of the rest of the paragraph,
+by which n is the argument supplied
+(ex: "hi 4" indents 4 spaces).
+The default is 2,
+which makes it identical to ".pn" (paragraph numbering)
+in form.
+The other paragraph commands will line up with the body indent,
+not the hang
+.hi 4
+ip
+- indented paragraph,
+4 spaces rightmost of the rest of the paragraph
+.hi 4
+nc
+- numbered and centered section,
+boldface,
+and padded.
+No new page is started.
+For a new page,
+see ".ct" (centered title)
+.up
+Note: the number register used for ".ns"
+is different than that used for ".nc",
+to allow for more flexibility
+.hi 4
+nl
+- numbered list
+.up
+Note: this is not a limiter/delimiter style macro,
+and as such,
+".nl" is required for each entry in the list.
+To reset the counter,
+see ".rl" (reset list)
+.hi 4
+np
+- numbered paragraph,
+which places a boldface number in line with
+the rest of the paragraph,
+indenting the text slightly to achieve this.
+For a hanging number and no indent,
+see ".pn" (paragraph numbers)
+.hi 4
+ns
+- numbered section,
+boldface,
+padded,
+and left-aligned
+.hi 4
+nt
+- numbered title,
+boldface,
+centered,
+padded,
+and begins a new page
+.hi 4
+pg
+- page,
+which sets up page length,
+header and footer spacing,
+right margin and left indent,
+and minimum number of lines
+needed to prevent a page break
+.hi 4
+pn
+- paragraph numbering,
+contrasted with ".np" (numbered paragraph)
+does not use boldface numbers,
+instead placing a number to the left of
+an un-indented paragraph
+.hi 4
+rl
+- reset list,
+which sets the list register back to 1
+.up
+Note: the ".r*" commands are reset commands,
+and follow the format of replacing the first
+letter of the command one wishes to reset the
+numbering for with an "r",
+making them easy to remember
+.hi 4
+rn
+- reset (paragraph) numbering,
+which sets the paragraph numbering register back to 1
+.hi 4
+rp
+- reset (numbered) paragraphs,
+which sets the paragraph numbering register back to 1
+.hi 4
+se
+- section,
+boldface,
+un-numbered,
+left-aligned,
+and padded
+.hi 4
+up
+- un-indented paragraph,
+which uses the default indent
+.br
+.in -4
+.cs "Additional Notes"
+.ip
+For NRO source files,
+I have adopted the practice of employing the .NRO extension,
+so as not to confuse them with any other type of file.
+For the output files,
+which may be easily viewed using MORE or LESS,
+I prefer a .MAN extension,
+to call back to nroff's use in manpages.
