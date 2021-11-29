@@ -3,6 +3,7 @@
 .nr N 1 1
 .nr S 1 1
 .nr C 1 1
+.nr T 1 1
 .de pg
 .pl 70
 .in 4
@@ -18,6 +19,14 @@
 .ce
 .bo 1
 $0
+.sp 2
+.br
+.en
+.de nt
+.bp 
+.ce
+.bo 1
+@nT $0
 .sp 2
 .br
 .en
@@ -94,4 +103,11 @@ $0
 .en
 .de rn
 .nr N 1 1
+.en
+.de hi
+.nr H 2 1
+.nr H $0
+.sp 1
+.br
+.ti -@nH
 .en
