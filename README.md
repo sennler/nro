@@ -1,5 +1,5 @@
 # nro
-A fork of the FreeDOS Unix-like utility "NRO".
+A fork of the FreeDOS Unix-like utility "NRO". Plans for the future include porting some version of troff for typesetting.
 
 Additions: A set of basic macros, "MERP.NRO", aims to make NRO source files more concise.
 To see how to use the MERP macro set, consult MERP1DOC.MAN in the MACRO directory.
